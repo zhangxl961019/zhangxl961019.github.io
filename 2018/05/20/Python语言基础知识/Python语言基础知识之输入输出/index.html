@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Python语言基础知识之输入输出 | 张晓龙的测试博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="通常，任何程序都会通过输入和输出功能来实现与用户进行交互和沟通。所谓输入，就是指程序通过用户输入的数据获取信息；而输出则是指程序向用户显示或打印数据。 一、数据的输入1. 用input()函数输入数据input()函数可以输入数值、字符串和其他对象。执行时首先在屏幕上显示提示字符串，然后等待用户输入，输入完毕后按回车，并将用户输入作为一个表达式进行解释、求值，最后将结果赋给指定变量。input()">
+<meta name="keywords" content="测试博客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python语言基础知识之输入输出">
+<meta property="og:url" content="http://yoursite.com/2018/05/20/Python语言基础知识/Python语言基础知识之输入输出/index.html">
+<meta property="og:site_name" content="张晓龙的测试博客">
+<meta property="og:description" content="通常，任何程序都会通过输入和输出功能来实现与用户进行交互和沟通。所谓输入，就是指程序通过用户输入的数据获取信息；而输出则是指程序向用户显示或打印数据。 一、数据的输入1. 用input()函数输入数据input()函数可以输入数值、字符串和其他对象。执行时首先在屏幕上显示提示字符串，然后等待用户输入，输入完毕后按回车，并将用户输入作为一个表达式进行解释、求值，最后将结果赋给指定变量。input()">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2018/05/20/Python语言基础知识/Python语言基础知识之输入输出/3.1.png">
+<meta property="og:image" content="http://yoursite.com/2018/05/20/Python语言基础知识/Python语言基础知识之输入输出/3.2.png">
+<meta property="og:image" content="http://yoursite.com/2018/05/20/Python语言基础知识/Python语言基础知识之输入输出/3.3.png">
+<meta property="og:updated_time" content="2018-05-20T09:32:37.507Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python语言基础知识之输入输出">
+<meta name="twitter:description" content="通常，任何程序都会通过输入和输出功能来实现与用户进行交互和沟通。所谓输入，就是指程序通过用户输入的数据获取信息；而输出则是指程序向用户显示或打印数据。 一、数据的输入1. 用input()函数输入数据input()函数可以输入数值、字符串和其他对象。执行时首先在屏幕上显示提示字符串，然后等待用户输入，输入完毕后按回车，并将用户输入作为一个表达式进行解释、求值，最后将结果赋给指定变量。input()">
+<meta name="twitter:image" content="http://yoursite.com/2018/05/20/Python语言基础知识/Python语言基础知识之输入输出/3.1.png">
+  
+    <link rel="alternate" href="/atom.xml" title="张晓龙的测试博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">张晓龙的测试博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">测试</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Python语言基础知识/Python语言基础知识之输入输出" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/20/Python语言基础知识/Python语言基础知识之输入输出/" class="article-date">
+  <time datetime="2018-05-20T08:30:48.000Z" itemprop="datePublished">2018-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Python语言基础知识之输入输出
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>通常，任何程序都会通过输入和输出功能来实现与用户进行交互和沟通。所谓输入，就是指程序通过用户输入的数据获取信息；而输出则是指程序向用户显示或打印数据。
+</code></pre><h2 id="一、数据的输入"><a href="#一、数据的输入" class="headerlink" title="一、数据的输入"></a>一、数据的输入</h2><p><strong>1. 用input()函数输入数据</strong><br><br>input()函数可以输入数值、字符串和其他对象。执行时首先在屏幕上显示提示字符串，然后等待用户输入，输入完毕后按回车，并将用户输入作为一个表达式进行解释、求值，最后将结果赋给指定变量。<br><img src="3.1.png" alt=""><br><br>input()函数也可以直接用在表达式中，相当于一个值。<br><br><img src="3.2.png" alt=""><br></p>
+<p><strong>2. 用raw_input()函数输入数据</strong><br><br>input()函数在输入数值型数据时相对比较方便，但是在输入字符串时则需要加上引号，否则input会将输入的字符串解释为变量名，除非程序中定义过该变量，否则将会报“变量未定义”的错误。<br><br><img src="3.3.png" alt=""><br></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/20/Python语言基础知识/Python语言基础知识之输入输出/" data-id="cjhen9vvs0004y4g8dis22clg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/05/20/读书笔记/《明智行动的艺术》读书笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          《明智行动的艺术》读书笔记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/05/15/Python网络爬虫与信息提取/Request库入门/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Request库入门</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/05/20/读书笔记/《明智行动的艺术》读书笔记/">《明智行动的艺术》读书笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/20/Python语言基础知识/Python语言基础知识之输入输出/">Python语言基础知识之输入输出</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/15/Python网络爬虫与信息提取/Request库入门/">Request库入门</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/14/张晓龙测试文章/">张晓龙测试文章</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/14/Python环境搭建/Python及Eclipse下PyDev的安装/">Python及Eclipse下PyDev的安装</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 zhangxl961019<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
